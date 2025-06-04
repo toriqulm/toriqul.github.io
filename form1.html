@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>registration form</title>
+<style>
+body{
+background-color:rgba(87,190,78);
+width :400px;
+height:600px;
+ }
+label,p,input{
+border:2px,solid, rgba(87,80,178);
+ }
+
+label{
+padding-left:3px;
+}
+form{
+margin-left:25px;
+margin-top:30px;
+}
+p{
+width:200px;
+}
+</style>
+</head>
+<body>
+<h3 style align=center><font color="rgb(139,171,81) "size="5">Student's Registration Form</font></h3>
+<hr>
+<form action="https://formspree.io/f/xwpbkkgl" method="POST"> 
+<label for="stu"> Student's Name:</label><br><br>
+<input type="text"placeholder="name"id="stu" name="name:" > <br><br>
+<label for="fat">Father's Name:</label><br><br>
+<input type="text"placeholder="name"id="fat" name="father:" > <br><br>
+<label for="mat">Mather's Name:</label><br><br>
+<input type="text"placeholder="name"id="mat" name="mother:" ><br><br>
+<label for="num">Mobile No:</label><br><br>
+<input type="number"placeholder="number"id="num" name="number:" ><br><br>
+<label for="emi">Email Id:</label><br><br>
+<input type="email"placeholder="email" id="emi" name="email:" ><br><br>
+<label for="det">Date Of Birth:</label><br><br>
+<input type="date" id="det" placeholder="date"name="date:" >
+<hr>
+<p>Student's Photo:</p>
+  <input type="file" name="photo" value="photo">
+
+<p>Gender:</p>
+
+<input type="radio" id="nmale" name="gender" value="male">
+<label for="nmale">Male</label><br>
+<br>
+<input type="radio" id="nfemale" name="gender" value="female">
+<label for="nfemale">Female</label>
+
+<br><br>
+
+<p>select Subject:</p>
+<input type="checkbox" id="sel" name="subject:"value="science">
+<label for="sel"> Science </label>
+
+<input type="checkbox" id="sel" name="subject:"value="art" >
+<label for="sel"> Art </label>
+
+<input type="checkbox" id="sel" name="subject:"value="commerce">
+<label for="sel"> Commerce </label>
+
+<hr>
+<input type="reset">
+<input type="submit"><br><br>
+</form>
+</body>
+</html>
